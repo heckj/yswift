@@ -45,7 +45,10 @@ let package = Package(
         // This script _does_ expect that you have Rust installed locally in order to function.
         .binaryTarget(
             name: "yniffiFFI",
-            path: "./lib/yniffiFFI.xcframework"
+            // Uncomment `path`, and comment out url and checksum, for local development
+            // path: "./lib/yniffiFFI.xcframework"
+            url: "https://github.com/heckj/yswift/releases/download/0.1.0/yniffiFFI.xcframework.zip",
+            checksum: "9aa2dd069662613b66749a257d753fc7007afe4817278edfd6cc902de94b5f6c"
         ),
         .target(
             name: "Yniffi",
