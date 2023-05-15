@@ -4,7 +4,7 @@ import PackageDescription
 
 var globalSwiftSettings: [PackageDescription.SwiftSetting] = []
 #if swift(>=5.7)
-    globalSwiftSettings.append(.unsafeFlags(["-Xfrontend", "-strict-concurrency=complete"]))
+    //globalSwiftSettings.append(.unsafeFlags(["-Xfrontend", "-strict-concurrency=complete"]))
     /*
      Summation from https://www.donnywals.com/enabling-concurrency-warnings-in-xcode-14/
      Set `strict-concurrency` to `targeted` to enforce Sendable and actor-isolation
